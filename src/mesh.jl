@@ -3,7 +3,7 @@ function generate_mesh(min::Float64, max::Float64, h::Float64)
 
 X=min:h:max
 X=0.1*X
-nx=size(x,1)
+nx=size(X,1)
 mesh=X
 #Generate mesh cordinate
 mesh_cord = zeros(nx, 2)
