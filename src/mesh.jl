@@ -1,6 +1,15 @@
 
 function generate_mesh(min::Float64, max::Float64, h::Float64)
+#=
+Dicretization function in CFEA.
 
+Take domian and mesh size as input
+Return mesh, mesh coordinate and mesh connection
+
+Typical usage example:
+
+Mechanical_boundary(mesh, mesh_cord)
+=#
 X=min:h:max
 X=0.1*X
 nx=size(X,1)

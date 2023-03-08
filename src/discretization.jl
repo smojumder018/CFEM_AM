@@ -1,4 +1,15 @@
 function Mechanical_boundary(mesh, mesh_cord)
+#=
+Dicretization function in CFEA.
+
+Take mesh and mesh coordinate as input
+Return boundary condition 
+
+Typical usage example:
+
+Mechanical_boundary(mesh, mesh_cord)
+=#
+
     nnode=length(mesh)
     coords=mesh_cord
     nlim = zeros(nnode)
@@ -12,6 +23,16 @@ function Mechanical_boundary(mesh, mesh_cord)
 end
 
 function Mechanical_boundary_load(mesh, mesh_cord)
+#=
+Dicretization function in CFEA.
+
+Take mesh and mesh coordinate as input
+Return loading condition 
+
+Typical usage example:
+
+echanical_boundary_load(mesh, mesh_cord)
+=#
     nnode=length(mesh)
     coords=mesh_cord
     nlim = zeros(nnode)

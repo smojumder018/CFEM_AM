@@ -1,10 +1,19 @@
-# comment
 r=4
 nnode=length(mesh)
 nelem=size(mesh_connect,1)
 coords=mesh_cord
 
 function patch_mesh(mesh_connect, nnode, r)
+#=
+Patch mesh function in CFEA.
+
+Take mesh connection index and value, nodal postion, patch nodes n as input
+Return patch mesh
+
+Typical usage example:
+
+patchmesh=patch_mesh(mesh_connect, nnode, r)
+=#
     # patch
     patchmesh = []
     connect=mesh_connect

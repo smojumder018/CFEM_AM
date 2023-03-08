@@ -5,6 +5,9 @@ mutable struct material
     end
 
 function Elas3D(mat::material)
+#=
+Defination of elastic matrix G K C
+=#
     E=mat.E
     nu=mat.nu
     G=E/(2*(1+nu))
